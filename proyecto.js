@@ -82,17 +82,18 @@ let vehiculos = [
 ]
 
 //METODO FIND
-let buscar = 'Ferrari'
+let buscar = 'Fiat'
 let buscado = vehiculos.find(vehiculos => vehiculos.Marca === buscar)
 console.log(buscado)
+console.table(buscado)
 
 //METODO FILTER
 let filtrar = 'Toyota'
 let filtrado = vehiculos.filter(vehiculos => vehiculos.Marca === filtrar)
-console.log(buscado)
+console.log(filtrado)
 
 //METODO SORT
-let ordenado = vehiculos.sort((x,y) => x.Fabricacion-y.Fabricacion)
+let ordenado = vehiculos.sort((x,y) => x.Precio-y.Precio)
 console.table(ordenado)
 
 //METODO MAP
