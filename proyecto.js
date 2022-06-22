@@ -24,6 +24,19 @@ for(let i=1;i<=cuotas;i++){
     console.table(`Cuota numero `+ i + `: $${cuotaTotal}`)
 }
 
+//Operador
+// if (precioAuto >3000000) {
+//     alert('Vehíulo de lujo, sujeto a carga impositiva')
+// }else {
+//     alert('No entra en categoria de vahículos de lujo y no paga excedente tributario')
+// }
+//Operador TERNARIO
+
+precioAuto > 3000000 ? alert('Vehíulo de lujo, sujeto a carga impositiva') : alert('No entra en categoria de vahículos de lujo y no paga excedente tributario')
+
+
+
+
 //BUSQUEDA DE VEHÍCULOS
 
 let vehiculos = [
@@ -127,3 +140,34 @@ console.table(ordenado)
 //METODO MAP
 let listaAutos = vehiculos.map(vehiculos => vehiculos.Marca + ', ' + vehiculos.Modelo + ', ' + '$' +vehiculos.Precio)
 console.table(listaAutos)
+
+
+
+//OPERADOR TERNARIO AND
+
+let seleccionVehiculo = vehiculos.Fabricacion < 2022 && new Date()
+console.log(seleccionVehiculo)
+
+//OPERADOR TERNARIO OR
+
+let vehiculos2 = null
+
+console.log (vehiculos || "El vehiculo no existe")
+console.log (vehiculos2 || "El vehiculo no existe")
+
+//DESESTRUCTURACION
+let {Marca,Modelo,Color,Categoria,Km,Fabricacion,Precio} = vehiculos
+
+console.log(Marca)
+console.log(Precio)
+
+//DESESTRUCTURANDO ARRAY
+let [a,b,c,d] = vehiculos
+console.log(a)
+
+//SPREAD ARRAY DE OBJETOS
+let vehiculos3 = {
+    ...vehiculos
+}
+
+console.log(vehiculos3)
