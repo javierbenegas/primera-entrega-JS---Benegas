@@ -15,7 +15,20 @@ let cuotaAuto = resta /cuotas.value * 1.3
 
 
 botonForm.addEventListener('click',()=>{
-    alert(`Bienvenido ${nombre.value} ${apellido.value}!!!\n\nEl valor de la cuota con una financiación de ${cuotas.value} meses es de $${cuotaAuto}\n\nEsta información será enviada a su correo ${correo.value} o nos estaremos comunicando a su teléfono ${telefono.value} para un mejor asesoramiento.\n\nMuchas gracias.`)
+    Swal.fire({
+        title: `Presupuesto confirmado ${nombre.value} ${apellido.value}`,
+        text: `Esta información será enviada a su correo ${correo.value} o nos estaremos comunicando a su teléfono ${telefono.value} para un mejor asesoramiento`,
+        icon: 'seccess',
+        showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        
+    })
+
+    //alert(`Bienvenido ${nombre.value} ${apellido.value}!!!\n\nEl valor de la cuota con una financiación de ${cuotas.value} meses es de $${cuotaAuto}\n\nEsta información será enviada a su correo ${correo.value} o nos estaremos comunicando a su teléfono ${telefono.value} para un mejor asesoramiento.\n\nMuchas gracias.`)
 })
 
 

@@ -171,3 +171,4 @@ let vehiculos3 = {
 }
 
 console.log(vehiculos3)
+
