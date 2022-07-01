@@ -1,0 +1,8 @@
+[
+    {"nombre": "Fiar Cronos", "precio": 2500000, "modelo": 2015, "km": 100000},
+    {"nombre": "Fiat MOBI", "precio": 2900000, "modelo": 2018, "km": 78000},
+    {"nombre": "Renault Sandero", "precio": 3500000, "modelo": 2017, "km": 130000},
+    {"nombre": "Volkswagen Golf", "precio": 4500000, "modelo": 2021, "km": 6000},
+    {"nombre": "Renault Logan", "precio": 4100000, "modelo": 2021, "km": 5500}
+
+]

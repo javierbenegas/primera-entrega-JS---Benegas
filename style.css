@@ -12,12 +12,42 @@
   padding-right: 50px;
 }
 
+/*Modificacion color de boton*/
+.btn-navbar {
+  color: white;
+  border-color: white;
+  background-color: black;
+  color: antiquewhite;
+}
 
 .navbar-modificada {
   background-color: black;
   color: antiquewhite;
 }
 
+/*Cambio de fondo en todo el carrusel*/
+#contenedor-carrusel {
+  background-color: black;
+}
+
+/*Modificacion de Carrusel de imagenes*/
+.carrusel-modificado {
+  margin: auto;
+  background-color: black;
+  color: antiquewhite;
+}
+
+/*Modificaciones para tarjetas*/
+.card-modificada {
+  background-color: black;
+  color: black;
+  padding: 25px 35px 35px 35px;
+}
+
+/*Cambios en boton de las cards*/
+.btn-card {
+  margin: 25px;
+}
 
 /*Modificacion de lista en footer*/
 .footer-modif {
